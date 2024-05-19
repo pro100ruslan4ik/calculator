@@ -54,6 +54,29 @@
             label = new Label();
             b_Percentage = new Button();
             b_Clear_Entry = new Button();
+            menuStrip1 = new MenuStrip();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            DefaultToolStripMenuItem = new ToolStripMenuItem();
+            EngineerStripMenuItem = new ToolStripMenuItem();
+            b_Sin = new Button();
+            b_Cos = new Button();
+            b_Tg = new Button();
+            b_Ctg = new Button();
+            b_Exp = new Button();
+            b_Ln = new Button();
+            b_Sh = new Button();
+            b_Ch = new Button();
+            b_Th = new Button();
+            b_Cth = new Button();
+            b_E = new Button();
+            b_Log = new Button();
+            b_Asin = new Button();
+            b_Acos = new Button();
+            b_Atg = new Button();
+            b_Actg = new Button();
+            b_Pi = new Button();
+            b_10_in_x = new Button();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // textBox
@@ -62,11 +85,11 @@
             textBox.BackColor = Color.FromArgb(32, 32, 32);
             textBox.Font = new Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox.ForeColor = Color.White;
-            textBox.Location = new Point(12, 22);
+            textBox.Location = new Point(12, 27);
             textBox.Multiline = true;
             textBox.Name = "textBox";
             textBox.ReadOnly = true;
-            textBox.Size = new Size(288, 58);
+            textBox.Size = new Size(550, 58);
             textBox.TabIndex = 0;
             textBox.Text = "0";
             textBox.TextAlign = HorizontalAlignment.Right;
@@ -482,7 +505,7 @@
             b_Clear.FlatStyle = FlatStyle.Flat;
             b_Clear.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             b_Clear.ForeColor = Color.White;
-            b_Clear.Location = new Point(166, 93);
+            b_Clear.Location = new Point(166, 98);
             b_Clear.Margin = new Padding(10);
             b_Clear.Name = "b_Clear";
             b_Clear.Size = new Size(57, 45);
@@ -503,7 +526,7 @@
             b_Delete.FlatStyle = FlatStyle.Flat;
             b_Delete.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             b_Delete.ForeColor = Color.White;
-            b_Delete.Location = new Point(243, 93);
+            b_Delete.Location = new Point(243, 98);
             b_Delete.Margin = new Padding(10);
             b_Delete.Name = "b_Delete";
             b_Delete.Size = new Size(57, 45);
@@ -556,7 +579,7 @@
             b_Percentage.FlatStyle = FlatStyle.Flat;
             b_Percentage.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             b_Percentage.ForeColor = Color.White;
-            b_Percentage.Location = new Point(12, 93);
+            b_Percentage.Location = new Point(12, 98);
             b_Percentage.Margin = new Padding(10);
             b_Percentage.Name = "b_Percentage";
             b_Percentage.Size = new Size(57, 45);
@@ -577,7 +600,7 @@
             b_Clear_Entry.FlatStyle = FlatStyle.Flat;
             b_Clear_Entry.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             b_Clear_Entry.ForeColor = Color.White;
-            b_Clear_Entry.Location = new Point(89, 93);
+            b_Clear_Entry.Location = new Point(89, 98);
             b_Clear_Entry.Margin = new Padding(10);
             b_Clear_Entry.Name = "b_Clear_Entry";
             b_Clear_Entry.Size = new Size(57, 45);
@@ -586,12 +609,438 @@
             b_Clear_Entry.UseVisualStyleBackColor = false;
             b_Clear_Entry.Click += b_Clear_Entry_Click;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(576, 24);
+            menuStrip1.TabIndex = 26;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { DefaultToolStripMenuItem, EngineerStripMenuItem });
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(57, 20);
+            toolStripMenuItem1.Text = "Режим";
+            // 
+            // DefaultToolStripMenuItem
+            // 
+            DefaultToolStripMenuItem.Name = "DefaultToolStripMenuItem";
+            DefaultToolStripMenuItem.Size = new Size(148, 22);
+            DefaultToolStripMenuItem.Text = "Обычный";
+            DefaultToolStripMenuItem.Click += DefaultToolStripMenuItem_Click;
+            // 
+            // EngineerStripMenuItem
+            // 
+            EngineerStripMenuItem.Name = "EngineerStripMenuItem";
+            EngineerStripMenuItem.Size = new Size(148, 22);
+            EngineerStripMenuItem.Text = "Инженерный";
+            EngineerStripMenuItem.Click += EngineerStripMenuItem_Click;
+            // 
+            // b_Sin
+            // 
+            b_Sin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Sin.BackColor = Color.FromArgb(50, 50, 50);
+            b_Sin.BackgroundImageLayout = ImageLayout.None;
+            b_Sin.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Sin.FlatAppearance.BorderSize = 0;
+            b_Sin.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Sin.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Sin.FlatStyle = FlatStyle.Flat;
+            b_Sin.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Sin.ForeColor = Color.White;
+            b_Sin.Location = new Point(345, 98);
+            b_Sin.Margin = new Padding(10);
+            b_Sin.Name = "b_Sin";
+            b_Sin.Size = new Size(57, 45);
+            b_Sin.TabIndex = 32;
+            b_Sin.Text = "sin";
+            b_Sin.UseVisualStyleBackColor = false;
+            b_Sin.Click += b_Sin_Click;
+            // 
+            // b_Cos
+            // 
+            b_Cos.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Cos.BackColor = Color.FromArgb(50, 50, 50);
+            b_Cos.BackgroundImageLayout = ImageLayout.None;
+            b_Cos.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Cos.FlatAppearance.BorderSize = 0;
+            b_Cos.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Cos.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Cos.FlatStyle = FlatStyle.Flat;
+            b_Cos.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Cos.ForeColor = Color.White;
+            b_Cos.Location = new Point(345, 158);
+            b_Cos.Margin = new Padding(10);
+            b_Cos.Name = "b_Cos";
+            b_Cos.Size = new Size(57, 45);
+            b_Cos.TabIndex = 31;
+            b_Cos.Text = "cos";
+            b_Cos.UseVisualStyleBackColor = false;
+            b_Cos.Click += b_Cos_Click;
+            // 
+            // b_Tg
+            // 
+            b_Tg.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Tg.BackColor = Color.FromArgb(50, 50, 50);
+            b_Tg.BackgroundImageLayout = ImageLayout.None;
+            b_Tg.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Tg.FlatAppearance.BorderSize = 0;
+            b_Tg.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Tg.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Tg.FlatStyle = FlatStyle.Flat;
+            b_Tg.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Tg.ForeColor = Color.White;
+            b_Tg.Location = new Point(345, 223);
+            b_Tg.Margin = new Padding(10);
+            b_Tg.Name = "b_Tg";
+            b_Tg.Size = new Size(57, 45);
+            b_Tg.TabIndex = 30;
+            b_Tg.Text = "tg";
+            b_Tg.UseVisualStyleBackColor = false;
+            b_Tg.Click += b_Tg_Click;
+            // 
+            // b_Ctg
+            // 
+            b_Ctg.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Ctg.BackColor = Color.FromArgb(50, 50, 50);
+            b_Ctg.BackgroundImageLayout = ImageLayout.None;
+            b_Ctg.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Ctg.FlatAppearance.BorderSize = 0;
+            b_Ctg.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Ctg.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Ctg.FlatStyle = FlatStyle.Flat;
+            b_Ctg.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Ctg.ForeColor = Color.White;
+            b_Ctg.Location = new Point(345, 288);
+            b_Ctg.Margin = new Padding(10);
+            b_Ctg.Name = "b_Ctg";
+            b_Ctg.Size = new Size(57, 45);
+            b_Ctg.TabIndex = 29;
+            b_Ctg.Text = "ctg";
+            b_Ctg.UseVisualStyleBackColor = false;
+            b_Ctg.Click += b_Ctg_Click;
+            // 
+            // b_Exp
+            // 
+            b_Exp.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Exp.BackColor = Color.FromArgb(50, 50, 50);
+            b_Exp.BackgroundImageLayout = ImageLayout.None;
+            b_Exp.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Exp.FlatAppearance.BorderSize = 0;
+            b_Exp.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Exp.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Exp.FlatStyle = FlatStyle.Flat;
+            b_Exp.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Exp.ForeColor = Color.White;
+            b_Exp.Location = new Point(345, 353);
+            b_Exp.Margin = new Padding(10);
+            b_Exp.Name = "b_Exp";
+            b_Exp.Size = new Size(57, 45);
+            b_Exp.TabIndex = 28;
+            b_Exp.Text = "exp";
+            b_Exp.UseVisualStyleBackColor = false;
+            b_Exp.Click += b_Exp_Click;
+            // 
+            // b_Ln
+            // 
+            b_Ln.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Ln.BackColor = Color.FromArgb(50, 50, 50);
+            b_Ln.BackgroundImageLayout = ImageLayout.None;
+            b_Ln.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Ln.FlatAppearance.BorderSize = 0;
+            b_Ln.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Ln.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Ln.FlatStyle = FlatStyle.Flat;
+            b_Ln.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Ln.ForeColor = Color.White;
+            b_Ln.Location = new Point(345, 418);
+            b_Ln.Margin = new Padding(10);
+            b_Ln.Name = "b_Ln";
+            b_Ln.Size = new Size(57, 45);
+            b_Ln.TabIndex = 27;
+            b_Ln.Text = "ln";
+            b_Ln.UseVisualStyleBackColor = false;
+            b_Ln.Click += b_Ln_Click;
+            // 
+            // b_Sh
+            // 
+            b_Sh.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Sh.BackColor = Color.FromArgb(50, 50, 50);
+            b_Sh.BackgroundImageLayout = ImageLayout.None;
+            b_Sh.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Sh.FlatAppearance.BorderSize = 0;
+            b_Sh.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Sh.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Sh.FlatStyle = FlatStyle.Flat;
+            b_Sh.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Sh.ForeColor = Color.White;
+            b_Sh.Location = new Point(413, 98);
+            b_Sh.Margin = new Padding(10);
+            b_Sh.Name = "b_Sh";
+            b_Sh.Size = new Size(57, 45);
+            b_Sh.TabIndex = 38;
+            b_Sh.Text = "sh";
+            b_Sh.UseVisualStyleBackColor = false;
+            b_Sh.Click += b_Sh_Click;
+            // 
+            // b_Ch
+            // 
+            b_Ch.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Ch.BackColor = Color.FromArgb(50, 50, 50);
+            b_Ch.BackgroundImageLayout = ImageLayout.None;
+            b_Ch.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Ch.FlatAppearance.BorderSize = 0;
+            b_Ch.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Ch.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Ch.FlatStyle = FlatStyle.Flat;
+            b_Ch.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Ch.ForeColor = Color.White;
+            b_Ch.Location = new Point(413, 158);
+            b_Ch.Margin = new Padding(10);
+            b_Ch.Name = "b_Ch";
+            b_Ch.Size = new Size(57, 45);
+            b_Ch.TabIndex = 37;
+            b_Ch.Text = "ch";
+            b_Ch.UseVisualStyleBackColor = false;
+            b_Ch.Click += b_Ch_Click;
+            // 
+            // b_Th
+            // 
+            b_Th.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Th.BackColor = Color.FromArgb(50, 50, 50);
+            b_Th.BackgroundImageLayout = ImageLayout.None;
+            b_Th.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Th.FlatAppearance.BorderSize = 0;
+            b_Th.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Th.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Th.FlatStyle = FlatStyle.Flat;
+            b_Th.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Th.ForeColor = Color.White;
+            b_Th.Location = new Point(413, 223);
+            b_Th.Margin = new Padding(10);
+            b_Th.Name = "b_Th";
+            b_Th.Size = new Size(57, 45);
+            b_Th.TabIndex = 36;
+            b_Th.Text = "th";
+            b_Th.UseVisualStyleBackColor = false;
+            b_Th.Click += b_Th_Click;
+            // 
+            // b_Cth
+            // 
+            b_Cth.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Cth.BackColor = Color.FromArgb(50, 50, 50);
+            b_Cth.BackgroundImageLayout = ImageLayout.None;
+            b_Cth.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Cth.FlatAppearance.BorderSize = 0;
+            b_Cth.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Cth.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Cth.FlatStyle = FlatStyle.Flat;
+            b_Cth.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Cth.ForeColor = Color.White;
+            b_Cth.Location = new Point(413, 288);
+            b_Cth.Margin = new Padding(10);
+            b_Cth.Name = "b_Cth";
+            b_Cth.Size = new Size(57, 45);
+            b_Cth.TabIndex = 35;
+            b_Cth.Text = "cth";
+            b_Cth.UseVisualStyleBackColor = false;
+            b_Cth.Click += b_Cth_Click;
+            // 
+            // b_E
+            // 
+            b_E.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_E.BackColor = Color.FromArgb(50, 50, 50);
+            b_E.BackgroundImageLayout = ImageLayout.None;
+            b_E.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_E.FlatAppearance.BorderSize = 0;
+            b_E.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_E.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_E.FlatStyle = FlatStyle.Flat;
+            b_E.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_E.ForeColor = Color.White;
+            b_E.Location = new Point(413, 353);
+            b_E.Margin = new Padding(10);
+            b_E.Name = "b_E";
+            b_E.Size = new Size(57, 45);
+            b_E.TabIndex = 34;
+            b_E.Text = "e";
+            b_E.UseVisualStyleBackColor = false;
+            b_E.Click += b_E_Click;
+            // 
+            // b_Log
+            // 
+            b_Log.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Log.BackColor = Color.FromArgb(50, 50, 50);
+            b_Log.BackgroundImageLayout = ImageLayout.None;
+            b_Log.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Log.FlatAppearance.BorderSize = 0;
+            b_Log.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Log.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Log.FlatStyle = FlatStyle.Flat;
+            b_Log.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Log.ForeColor = Color.White;
+            b_Log.Location = new Point(413, 418);
+            b_Log.Margin = new Padding(10);
+            b_Log.Name = "b_Log";
+            b_Log.Size = new Size(57, 45);
+            b_Log.TabIndex = 33;
+            b_Log.Text = "log";
+            b_Log.UseVisualStyleBackColor = false;
+            b_Log.Click += b_Log_Click;
+            // 
+            // b_Asin
+            // 
+            b_Asin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Asin.BackColor = Color.FromArgb(50, 50, 50);
+            b_Asin.BackgroundImageLayout = ImageLayout.None;
+            b_Asin.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Asin.FlatAppearance.BorderSize = 0;
+            b_Asin.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Asin.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Asin.FlatStyle = FlatStyle.Flat;
+            b_Asin.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Asin.ForeColor = Color.White;
+            b_Asin.Location = new Point(482, 98);
+            b_Asin.Margin = new Padding(10);
+            b_Asin.Name = "b_Asin";
+            b_Asin.Size = new Size(71, 45);
+            b_Asin.TabIndex = 44;
+            b_Asin.Text = "asin";
+            b_Asin.UseVisualStyleBackColor = false;
+            b_Asin.Click += b_Asin_Click;
+            // 
+            // b_Acos
+            // 
+            b_Acos.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Acos.BackColor = Color.FromArgb(50, 50, 50);
+            b_Acos.BackgroundImageLayout = ImageLayout.None;
+            b_Acos.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Acos.FlatAppearance.BorderSize = 0;
+            b_Acos.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Acos.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Acos.FlatStyle = FlatStyle.Flat;
+            b_Acos.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Acos.ForeColor = Color.White;
+            b_Acos.Location = new Point(482, 158);
+            b_Acos.Margin = new Padding(10);
+            b_Acos.Name = "b_Acos";
+            b_Acos.Size = new Size(71, 45);
+            b_Acos.TabIndex = 43;
+            b_Acos.Text = "acos";
+            b_Acos.UseVisualStyleBackColor = false;
+            b_Acos.Click += b_Acos_Click;
+            // 
+            // b_Atg
+            // 
+            b_Atg.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Atg.BackColor = Color.FromArgb(50, 50, 50);
+            b_Atg.BackgroundImageLayout = ImageLayout.None;
+            b_Atg.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Atg.FlatAppearance.BorderSize = 0;
+            b_Atg.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Atg.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Atg.FlatStyle = FlatStyle.Flat;
+            b_Atg.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Atg.ForeColor = Color.White;
+            b_Atg.Location = new Point(482, 223);
+            b_Atg.Margin = new Padding(10);
+            b_Atg.Name = "b_Atg";
+            b_Atg.Size = new Size(70, 45);
+            b_Atg.TabIndex = 42;
+            b_Atg.Text = "atg";
+            b_Atg.UseVisualStyleBackColor = false;
+            b_Atg.Click += b_Atg_Click;
+            // 
+            // b_Actg
+            // 
+            b_Actg.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Actg.BackColor = Color.FromArgb(50, 50, 50);
+            b_Actg.BackgroundImageLayout = ImageLayout.None;
+            b_Actg.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Actg.FlatAppearance.BorderSize = 0;
+            b_Actg.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Actg.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Actg.FlatStyle = FlatStyle.Flat;
+            b_Actg.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Actg.ForeColor = Color.White;
+            b_Actg.Location = new Point(482, 288);
+            b_Actg.Margin = new Padding(10);
+            b_Actg.Name = "b_Actg";
+            b_Actg.Size = new Size(71, 45);
+            b_Actg.TabIndex = 41;
+            b_Actg.Text = "actg";
+            b_Actg.UseVisualStyleBackColor = false;
+            b_Actg.Click += b_Actg_Click;
+            // 
+            // b_Pi
+            // 
+            b_Pi.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_Pi.BackColor = Color.FromArgb(50, 50, 50);
+            b_Pi.BackgroundImageLayout = ImageLayout.None;
+            b_Pi.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_Pi.FlatAppearance.BorderSize = 0;
+            b_Pi.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_Pi.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_Pi.FlatStyle = FlatStyle.Flat;
+            b_Pi.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_Pi.ForeColor = Color.White;
+            b_Pi.Location = new Point(482, 353);
+            b_Pi.Margin = new Padding(10);
+            b_Pi.Name = "b_Pi";
+            b_Pi.Size = new Size(70, 45);
+            b_Pi.TabIndex = 40;
+            b_Pi.Text = "π";
+            b_Pi.UseVisualStyleBackColor = false;
+            b_Pi.Click += b_Pi_Click;
+            // 
+            // b_10_in_x
+            // 
+            b_10_in_x.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            b_10_in_x.BackColor = Color.FromArgb(50, 50, 50);
+            b_10_in_x.BackgroundImageLayout = ImageLayout.None;
+            b_10_in_x.FlatAppearance.BorderColor = Color.FromArgb(59, 59, 59);
+            b_10_in_x.FlatAppearance.BorderSize = 0;
+            b_10_in_x.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 20, 20);
+            b_10_in_x.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 58, 58);
+            b_10_in_x.FlatStyle = FlatStyle.Flat;
+            b_10_in_x.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            b_10_in_x.ForeColor = Color.White;
+            b_10_in_x.Location = new Point(482, 418);
+            b_10_in_x.Margin = new Padding(10);
+            b_10_in_x.Name = "b_10_in_x";
+            b_10_in_x.Size = new Size(71, 45);
+            b_10_in_x.TabIndex = 39;
+            b_10_in_x.Text = "10^x";
+            b_10_in_x.UseVisualStyleBackColor = false;
+            b_10_in_x.Click += b_10_in_x_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 32, 32);
-            ClientSize = new Size(314, 475);
+            ClientSize = new Size(576, 475);
+            Controls.Add(b_Asin);
+            Controls.Add(b_Acos);
+            Controls.Add(b_Atg);
+            Controls.Add(b_Actg);
+            Controls.Add(b_Pi);
+            Controls.Add(b_10_in_x);
+            Controls.Add(b_Sh);
+            Controls.Add(b_Ch);
+            Controls.Add(b_Th);
+            Controls.Add(b_Cth);
+            Controls.Add(b_E);
+            Controls.Add(b_Log);
+            Controls.Add(b_Sin);
+            Controls.Add(b_Cos);
+            Controls.Add(b_Tg);
+            Controls.Add(b_Ctg);
+            Controls.Add(b_Exp);
+            Controls.Add(b_Ln);
             Controls.Add(b_Clear_Entry);
             Controls.Add(b_Percentage);
             Controls.Add(label);
@@ -618,8 +1067,13 @@
             Controls.Add(b_0);
             Controls.Add(b_Change_Sign);
             Controls.Add(textBox);
+            Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Калькулятор";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -652,5 +1106,27 @@
         private Label label;
         private Button b_Percentage;
         private Button b_Clear_Entry;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem DefaultToolStripMenuItem;
+        private ToolStripMenuItem EngineerStripMenuItem;
+        private Button b_Sin;
+        private Button b_Cos;
+        private Button b_Tg;
+        private Button b_Ctg;
+        private Button b_Exp;
+        private Button b_Ln;
+        private Button b_Sh;
+        private Button b_Ch;
+        private Button b_Th;
+        private Button b_Cth;
+        private Button b_E;
+        private Button b_Log;
+        private Button b_Asin;
+        private Button b_Acos;
+        private Button b_Atg;
+        private Button b_Actg;
+        private Button b_Pi;
+        private Button b_10_in_x;
     }
 }

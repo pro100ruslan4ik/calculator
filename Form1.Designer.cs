@@ -582,9 +582,9 @@
 
         private TextBox textBox1;
         private Button b_plus_minus;
-        private Button b_0;
-        private Button b_point;
         private Button b_equals;
+        private Button b_point;
+        private Button b_0;
         private Button b_1;
         private Button b_2;
         private Button b_3;
